@@ -35,8 +35,7 @@ export default function Header() {
               justifyContent: "center",
             }}
           >
-            <Col xs={18
-} sm={14} md={14} lg={18} xl={12}>
+            <Col xs={17} sm={15} md={14} lg={18} xl={12}>
               <h1 style={{ fontFamily: "sans-serif", color: "#59d7e2" }}>
                 Sai Teja Jonnadula
               </h1>
