@@ -22,20 +22,21 @@ const platforms = [
   "Sonarqube",
   "Bitbucket",
 ];
+const otherTags = ["agile", "micro-services", "queue-anim"];
 
 export default function TechnicalSkills() {
   return (
     <>
       <Row>
-        <Col md={{ span: 23 }}>
+        <Col xs={23} sm={23} md={23} lg={23} xl={23}>
           <h3 style={{ backgroundColor: "#59d7e2", color: "black" }}>
             Technical Skills
           </h3>
         </Col>
       </Row>
 
-      <Row style={{ paddingBottom: "15px" }}>
-        <Col md={{ span: 23 }}>
+      <Row className="padd-bottom">
+        <Col xs={24} sm={24} md={23} lg={23} xl={23}>
           <div>Front end technologies : </div>
           {uiTechs.map((tech) => {
             return <Tag key={tech}>{tech}</Tag>;
@@ -43,8 +44,8 @@ export default function TechnicalSkills() {
         </Col>
       </Row>
 
-      <Row style={{ paddingBottom: "15px" }}>
-        <Col md={{ span: 23 }}>
+      <Row className="padd-bottom">
+        <Col xs={24} sm={24} md={23} lg={23} xl={23}>
           <div>JS Libraries : </div>
           {libraries.map((tech) => {
             return <Tag key={tech}>{tech}</Tag>;
@@ -52,8 +53,8 @@ export default function TechnicalSkills() {
         </Col>
       </Row>
 
-      <Row style={{ paddingBottom: "15px" }}>
-        <Col md={{ span: 23 }}>
+      <Row className="padd-bottom">
+        <Col xs={24} sm={24} md={23} lg={23} xl={23}>
           <div>Frameworks : </div>
           {frameworks.map((tech) => {
             return <Tag key={tech}>{tech}</Tag>;
@@ -61,8 +62,8 @@ export default function TechnicalSkills() {
         </Col>
       </Row>
 
-      <Row style={{ paddingBottom: "15px" }}>
-        <Col md={{ span: 23 }}>
+      <Row className="padd-bottom">
+        <Col xs={24} sm={24} md={23} lg={23} xl={23}>
           <div>Programming and RDMS : </div>
           {programmeTechs.map((tech) => {
             return <Tag key={tech}>{tech}</Tag>;
@@ -70,8 +71,8 @@ export default function TechnicalSkills() {
         </Col>
       </Row>
 
-      <Row style={{ paddingBottom: "15px" }}>
-        <Col md={{ span: 23 }}>
+      <Row className="padd-bottom">
+        <Col xs={24} sm={24} md={23} lg={23} xl={23}>
           <div>Service Management : </div>
           {industryKnowledge.map((tech) => {
             return <Tag key={tech}>{tech}</Tag>;
@@ -79,10 +80,19 @@ export default function TechnicalSkills() {
         </Col>
       </Row>
 
-      <Row style={{ paddingBottom: "50px" }}>
-        <Col md={{ span: 23 }}>
+      <Row className="padd-bottom">
+        <Col xs={24} sm={24} md={23} lg={23} xl={23}>
           <div>Platforms : </div>
           {platforms.map((tech) => {
+            return <Tag key={tech}>{tech}</Tag>;
+          })}
+        </Col>
+      </Row>
+
+      <Row className="padBottom-more">
+        <Col xs={24} sm={24} md={23} lg={23} xl={23}>
+          <div>Others : </div>
+          {otherTags.map((tech) => {
             return <Tag key={tech}>{tech}</Tag>;
           })}
         </Col>

@@ -16,6 +16,15 @@
   padding-bottom: 10px;
 }
 
+.padBottom-more {
+  padding-bottom: 40px;
+}
+
+img {
+  border-radius: 50%;
+  height: 150px;
+}
+
 body {
   background-color: "#2d3e50";
 }

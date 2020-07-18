@@ -7,7 +7,7 @@ export default function AboutMe() {
       <div style={{ paddingLeft: "7px" }}>
         <Divider orientation="left">About Me</Divider>
         <div>
-          A cognitive software developer with 3.2 years of experience in
+          A cognitive software developer with 3.2+ years of experience in
           developing React applications, site reliable applications and
           production support. Expert in working with web technologies and
           developed many independent web applications. Enthusiastic and
