@@ -22,7 +22,7 @@ const platforms = [
   "Sonarqube",
   "Bitbucket",
 ];
-const otherTags = ["agile", "micro-services", "queue-anim"];
+const otherTags = ["agile", "micro frontends, "micro services", "JWT", "styled components", "queue-anim"];
 
 export default function TechnicalSkills() {
   return (
