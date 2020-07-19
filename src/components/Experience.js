@@ -152,7 +152,7 @@ const projectdetails = [
         A third party application used for pictorial representation. It involves
         in choosing a remedy tool database & visualizers, schedule customised
         alerts to users before breaching SLA and service standards. Reporting
-        Toil has been significantly reduced with periodical exports and track of
+        Toil has been significantly reduced with automated periodical exports and track of
         incidents, problems, changes for production suport teams.
       </div>
     ),
@@ -160,7 +160,7 @@ const projectdetails = [
   {
     id: "10",
     dotColor: "blue",
-    title: "Work Flow Integration - Production Support",
+    title: "WFI - Production Support",
     info: ["2017", "Infosys"],
     techs: [
       "incident management",
