@@ -50,7 +50,7 @@ export default function SoftSkills() {
               style={{ fontSize: "0.93rem" }}
               allowHalf
               disabled
-              defaultValue={4}
+              defaultValue={4.5}
             />
           </Col>
         </Row>
