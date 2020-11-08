@@ -3,10 +3,11 @@ import Header from "./Header";
 import AboutMe from "./AboutMe";
 import SoftSkills from "./SoftSkills";
 import TechnicalSkills from "./TechnicalSkills";
+import ProfessionalCarrier from "./ProfessionalCarrier";
 import Education from "./Education";
-import Experience from "./Experience";
 import PersonalProjects from "./PersonalProjects";
 import SelfInterests from "./SelfInterests";
+import Awards from "./Awards";
 
 import { Row, Col } from "antd";
 
@@ -18,9 +19,9 @@ export default function Layout() {
       <Row>
         <Col xs={24} sm={24} md={6} lg={6} xl={6}>
           <SoftSkills />
-          <TechnicalSkills />
-          <SelfInterests />
+          <Awards />
           <PersonalProjects />
+          <SelfInterests />
         </Col>
         <Col
           xs={24}
@@ -31,8 +32,9 @@ export default function Layout() {
           style={{ backgroundColor: "White", color: "black" }}
         >
           <AboutMe />
+          <ProfessionalCarrier />
           <Education />
-          <Experience />
+          <TechnicalSkills />
         </Col>
       </Row>
     </>

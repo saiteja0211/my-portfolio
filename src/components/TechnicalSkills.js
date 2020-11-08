@@ -1,80 +1,97 @@
 import React from "react";
-import { Row, Col, Tag } from "antd";
+import { Row, Col, Tag, Divider, Tooltip } from "antd";
+import OpenLink from "./OpenLink";
 
-const uiTechs = [
-  "React JS",
-  "Redux",
-  "Redux Thunk",
-  "Hooks",
-  "JavaScript",
-  "CSS",
-  "HTML",
-];
-const libraries = ["Antd", "Jest", "Lodash", "ReactTable"];
-const frameworks = ["Spring Boot", "Material UI", "Gatsby"];
-const programmeTechs = ["Java", "Python", "SQL"];
-const industryKnowledge = ["Incident", "Problem", "Change"];
+const uiTechs = {
+  "React JS": "https://reactjs.org/",
+  "React Hooks": "https://reactjs.org/docs/hooks-intro.html",
+  Redux: "https://redux.js.org/",
+  "Redux Thunk": "https://www.npmjs.com/package/redux-thunk",
+  "Redux Logger": "https://www.npmjs.com/package/redux-logger",
+  JavaScript: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  CSS: "",
+  HTML: "",
+  Nivo: "https://nivo.rocks/",
+};
+
+const otherUILibs = {
+  Antd: "https://ant.design/",
+  "Material UI": "https://material-ui.com/",
+  Gatsby: "https://www.gatsbyjs.com/",
+  Axios: "https://www.npmjs.com/package/axios",
+  "React Router": "https://reactrouter.com/",
+  "React Table": "https://react-table.tanstack.com/",
+  "Styled Components": "https://styled-components.com/",
+  Lodash: "https://lodash.com/",
+  "queue-anim": "https://www.npmjs.com/package/rc-queue-anim",
+  Jest: "https://jestjs.io/",
+};
+const backend = ["Spring Boot", "Java", "SQL"];
+
 const platforms = [
+  "Agile",
+  "Jira",
   "Jenkins",
-  "OpenShift container",
-  "ELK",
-  "nexus",
-  "Sonarqube",
   "Bitbucket",
+  "OpenShift container",
+  "SonarQube",
+  "Nexus IQ",
+  "ELK",
+  "BMC Remedy",
 ];
-const otherTags = ["agile", "micro frontends", "micro services", "JWT", "styled components", "queue-anim"];
 
+const otherTechs = [
+  "Python",
+  "Incident Management",
+  "Problem Management",
+  "Change Management",
+  "micro frontends",
+  "micro services",
+  "JWT",
+];
 export default function TechnicalSkills() {
   return (
-    <>
+    <div className="padd-left" id="component-technical-skills">
       <Row>
         <Col xs={23} sm={23} md={23} lg={23} xl={23}>
-          <h3 style={{ backgroundColor: "#59d7e2", color: "black" }}>
+          <Divider style={{ color: "black", margin: "5px" }} orientation="left">
             Technical Skills
-          </h3>
+          </Divider>
         </Col>
       </Row>
 
       <Row className="padd-bottom">
+        <Tooltip placement="rightBottom" title="Primary Skills">
+          <div>Frontend Technologies :</div>
+        </Tooltip>
         <Col xs={24} sm={24} md={23} lg={23} xl={23}>
-          <div>Front end technologies : </div>
-          {uiTechs.map((tech) => {
-            return <Tag key={tech}>{tech}</Tag>;
+          {Object.keys(uiTechs).map((tech) => {
+            return (
+              <Tag key={tech}>
+                <OpenLink name={tech} link={uiTechs[tech]} />
+              </Tag>
+            );
           })}
         </Col>
       </Row>
 
       <Row className="padd-bottom">
         <Col xs={24} sm={24} md={23} lg={23} xl={23}>
-          <div>JS Libraries : </div>
-          {libraries.map((tech) => {
-            return <Tag key={tech}>{tech}</Tag>;
+          <div>JS Libraries & Frameworks: </div>
+          {Object.keys(otherUILibs).map((tech) => {
+            return (
+              <Tag key={tech}>
+                <OpenLink name={tech} link={otherUILibs[tech]} />
+              </Tag>
+            );
           })}
         </Col>
       </Row>
 
       <Row className="padd-bottom">
         <Col xs={24} sm={24} md={23} lg={23} xl={23}>
-          <div>Frameworks : </div>
-          {frameworks.map((tech) => {
-            return <Tag key={tech}>{tech}</Tag>;
-          })}
-        </Col>
-      </Row>
-
-      <Row className="padd-bottom">
-        <Col xs={24} sm={24} md={23} lg={23} xl={23}>
-          <div>Programming and RDMS : </div>
-          {programmeTechs.map((tech) => {
-            return <Tag key={tech}>{tech}</Tag>;
-          })}
-        </Col>
-      </Row>
-
-      <Row className="padd-bottom">
-        <Col xs={24} sm={24} md={23} lg={23} xl={23}>
-          <div>Service Management : </div>
-          {industryKnowledge.map((tech) => {
+          <div>Backend Technologies : </div>
+          {backend.map((tech) => {
             return <Tag key={tech}>{tech}</Tag>;
           })}
         </Col>
@@ -82,21 +99,21 @@ export default function TechnicalSkills() {
 
       <Row className="padd-bottom">
         <Col xs={24} sm={24} md={23} lg={23} xl={23}>
-          <div>Platforms : </div>
-          {platforms.map((tech) => {
-            return <Tag key={tech}>{tech}</Tag>;
+          <div>Platform knowledge : </div>
+          {platforms.map((each) => {
+            return <Tag key={each}>{each}</Tag>;
           })}
         </Col>
       </Row>
 
-      <Row className="padBottom-more">
+      <Row className="padd-bottom">
         <Col xs={24} sm={24} md={23} lg={23} xl={23}>
-          <div>Others : </div>
-          {otherTags.map((tech) => {
+          <div>Other Industry knowledge & Techs : </div>
+          {otherTechs.map((tech) => {
             return <Tag key={tech}>{tech}</Tag>;
           })}
         </Col>
       </Row>
-    </>
+    </div>
   );
 }

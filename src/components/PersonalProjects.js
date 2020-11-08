@@ -13,9 +13,7 @@ export default function PersonalProjects() {
     <>
       <Row>
         <Col xs={23} sm={23} md={23} lg={23} xl={23}>
-          <h3 style={{ backgroundColor: "#59d7e2", color: "black" }}>
-            Personal Projects
-          </h3>
+          <h3 className="skill-header">Personal Projects</h3>
         </Col>
       </Row>
 
@@ -55,7 +53,14 @@ export default function PersonalProjects() {
             <ThunderboltFilled className="large-icons" /> Gatsby Portfolio
           </a>
         </Col>
-        <Col className="padBottom-more" xs={12} sm={12} md={23} lg={23} xl={23}>
+        <Col
+          className="pad-bottom-more"
+          xs={12}
+          sm={12}
+          md={23}
+          lg={23}
+          xl={23}
+        >
           <a
             href="http://gatsby-portfolio-ui.netlify.app/"
             target="_blank"

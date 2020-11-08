@@ -12,9 +12,7 @@ export default function SelfInterests() {
     <>
       <Row>
         <Col xs={23} sm={23} md={23} lg={23} xl={23}>
-          <h3 style={{ backgroundColor: "#59d7e2", color: "black" }}>
-            Self Interests
-          </h3>
+          <h3 className="skill-header">Self Interests</h3>
         </Col>
       </Row>
 
@@ -28,7 +26,7 @@ export default function SelfInterests() {
         <Col className="padd-bottom" xs={12} sm={12} md={23} lg={23} xl={23}>
           <LaptopOutlined className="large-icons" /> Gaming
         </Col>
-        <Col className="padBottom-more" xs={12} sm={12} md={23} lg={23} xl={23}>
+        <Col className="padd-bottom" xs={12} sm={12} md={23} lg={23} xl={23}>
           <ChromeOutlined className="large-icons" /> Surfing Web
         </Col>
       </Row>

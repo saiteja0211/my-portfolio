@@ -6,13 +6,11 @@ export default function SoftSkills() {
     <>
       <Row>
         <Col xs={23} sm={23} md={23} lg={23} xl={23}>
-          <h3 style={{ backgroundColor: "#59d7e2", color: "black" }}>
-            Soft Skills
-          </h3>
+          <h3 className="skill-header">Soft Skills</h3>
         </Col>
       </Row>
 
-      <div style={{ fontSize: "0.9rem" }} className="padBottom-more">
+      <div style={{ fontSize: "0.9rem" }} className="pad-bottom-more">
         <Row>
           <Col xs={7} sm={6} md={24} lg={24} xl={10}>
             Flexibility{" "}
@@ -29,7 +27,7 @@ export default function SoftSkills() {
 
         <Row>
           <Col xs={7} sm={6} md={24} lg={24} xl={10}>
-            Logical Thinking
+            Design Thinking
           </Col>
           <Col xs={17} sm={18} md={24} lg={24} xl={14}>
             <Rate
