@@ -6,16 +6,17 @@ const projectdetails = [
   {
     id: "1",
     dotColor: "red",
-    title: "SVGenie-ui",
+    title: "SVGenie-ui, Raft-ui",
     info: ["2020", "DBS"],
-    techs: ["react", "hooks", "react-table", "react-context"],
+    techs: ["react", "react-hooks", "redux", "react-table"],
     description: (
       <div>
         Service virtualization helps the user to mimic service oriented
         architecture and allows user to create and consume HTTP/S and IBM MQ
-        virtual services. User can create, edit, test, clone, approve, download,
-        delete virtual service(s). It is a hassle-free process for frontend
-        developers without any dependency on backend services.
+        virtual services by virtualizing request or response. User can create,
+        edit, test, clone, approve, download, delete & even schedule virtual
+        service(s). It is a hassle-free process for frontend developers without
+        any dependency on backend services.
       </div>
     ),
   },
@@ -28,9 +29,10 @@ const projectdetails = [
       "react",
       "redux",
       "redux-thunk",
+      "redux-logger",
       "chaos engineering",
       "elastic search",
-      "enhanchements",
+      "nivo visualization",
     ],
     description: (
       <div>
@@ -91,10 +93,10 @@ const projectdetails = [
     ],
     description: (
       <div>
-        Oboarding of a application involves in provisioning platforms(AWS,
-        openshift) and tools(bitbucket, jenkins, nexus, sonarqube). This service
-        helps the user to create a new AppCode and onboarding request with
-        selected tools and paltform.
+        Involves in automated onboarding of a application & provisioning
+        platforms(AWS, openshift, VPC, Mobile) and tools(Bitbucket, Jenkins,
+        Nexus, SonarQube). This service helps the user to onboard new
+        applications and selective provisioning of tools and paltforms.
       </div>
     ),
   },
@@ -121,9 +123,9 @@ const projectdetails = [
     techs: ["react", "user access review", "bolt micro-frontends"],
     description: (
       <div>
-        A bi-yearly review system triggered to application owners. Owners can
-        review user access under cicd tools, testing tools, production tools and
-        choose either retain/revoke action.
+        A bi-yearly review system triggered to application owners. It is onestop
+        place for application Owners to review user access under cicd, testing &
+        production tools and choose either retain/revoke action.
       </div>
     ),
   },
@@ -132,9 +134,13 @@ const projectdetails = [
     dotColor: "blue",
     title: "Reporting hub",
     info: ["2018", "Infosys"],
-    techs: ["react", "bootstrap", "css"],
+    techs: ["react", "javascript", "css", "html"],
     description: (
-      <div>A middleware credit report facilitator used by bankers. </div>
+      <div>
+        A middleware credit report facilitator used by bankers. It’s acts as
+        buffer to upstream and downstream layers. Report view and download are
+        the only features available.
+      </div>
     ),
   },
   {
@@ -152,8 +158,8 @@ const projectdetails = [
         A third party application used for pictorial representation. It involves
         in choosing a remedy tool database & visualizers, schedule customised
         alerts to users before breaching SLA and service standards. Reporting
-        Toil has been significantly reduced with automated periodical exports and track of
-        incidents, problems, changes for production suport teams.
+        Toil has been significantly reduced with automated periodical exports
+        and track of incidents, problems, changes for production suport teams.
       </div>
     ),
   },
@@ -171,7 +177,7 @@ const projectdetails = [
     ],
     description: (
       <div>
-        Worked and ensured Service level agreements and service standards in
+        Supported and ensured Service level agreements and service standards in
         track for incidents, problems, changes. Production support for 11
         applications(inhouse, vendor). Involved in support, minor enhanchements
         and environemnt migration of legacy applications.
@@ -183,30 +189,32 @@ const projectdetails = [
 export default function Experience() {
   return (
     <>
-      <div style={{ paddingLeft: "7px" }}>
-        <Divider orientation="left">Experience</Divider>
+      <div className="padd-left" id="component-professional-experience">
+        <Divider orientation="left">Professional Experience</Divider>
         <Timeline mode="left">
           {projectdetails.map((project) => {
             return (
               <Timeline.Item
                 dot={project.id === "1" ? <ClockCircleOutlined /> : ""}
                 color={project.dotColor}
+                key={project.id}
               >
-                <div>
-                  <div style={{ paddingBottom: "5px" }}>
-                    <span className="project-title">{project.title} : </span>
-                    {project.info.map((value) => {
-                      return <Tag key={value}>{value}</Tag>;
-                    })}
-                  </div>
+                <div className="box" style={{ padding: "10px" }}>
                   <div>
-                    {project.techs.map((tech) => {
-                      return <Tag>{tech}</Tag>;
-                    })}
+                    <div style={{ paddingBottom: "5px" }}>
+                      <span className="project-title">{project.title} : </span>
+                      {project.info.map((value) => {
+                        return <Tag key={value}>{value}</Tag>;
+                      })}
+                    </div>
+                    <div>
+                      {project.techs.map((tech) => {
+                        return <Tag key={tech}>{tech}</Tag>;
+                      })}
+                    </div>
                   </div>
+                  <div>{project.description}</div>
                 </div>
-                <div>{project.description}</div>
-                <div style={{ paddingBottom: "40px" }}></div>
               </Timeline.Item>
             );
           })}
