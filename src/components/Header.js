@@ -35,12 +35,16 @@ export default function Header() {
               justifyContent: "center",
             }}
           >
-            <Col xs={17} sm={12} md={14} lg={16} xl={12}>
+            <Col
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
               <h1 style={{ fontFamily: "sans-serif", color: "#59d7e2" }}>
-                Sai Teja Jonnadula
+                Hi, I'm Sai Teja Jonnadula
               </h1>
             </Col>
-            <Col xs={24} sm={24} md={10} lg={8} xl={12}></Col>
           </Row>
 
           <Row>
@@ -69,7 +73,7 @@ export default function Header() {
               </div>
             </Col>
             <Col
-              xs={16}
+              xs={20}
               sm={16}
               md={10}
               lg={10}
@@ -98,7 +102,7 @@ export default function Header() {
               </div>
             </Col>
             <Col
-              xs={8}
+              xs={4}
               sm={8}
               md={4}
               lg={4}
