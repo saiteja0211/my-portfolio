@@ -12,10 +12,10 @@ export default function SoftSkills() {
 
       <div style={{ fontSize: "0.9rem" }} className="pad-bottom-more">
         <Row>
-          <Col xs={10} sm={6} md={24} lg={24} xl={10}>
+          <Col xs={12} sm={12} md={24} lg={24} xl={10}>
             Flexibility{" "}
           </Col>
-          <Col xs={14} sm={18} md={24} lg={24} xl={14}>
+          <Col xs={12} sm={12} md={24} lg={24} xl={14}>
             <Rate
               style={{ fontSize: "0.93rem" }}
               allowHalf
@@ -26,10 +26,10 @@ export default function SoftSkills() {
         </Row>
 
         <Row>
-          <Col xs={10} sm={6} md={24} lg={24} xl={10}>
+          <Col xs={12} sm={12} md={24} lg={24} xl={10}>
             Design Thinking
           </Col>
-          <Col xs={14} sm={18} md={24} lg={24} xl={14}>
+          <Col xs={12} sm={12} md={24} lg={24} xl={14}>
             <Rate
               style={{ fontSize: "0.93rem" }}
               allowHalf
@@ -40,10 +40,10 @@ export default function SoftSkills() {
         </Row>
 
         <Row>
-          <Col xs={10} sm={6} md={24} lg={24} xl={10}>
+          <Col xs={12} sm={12} md={24} lg={24} xl={10}>
             Collaboration
           </Col>
-          <Col xs={14} sm={18} md={24} lg={24} xl={14}>
+          <Col xs={12} sm={12} md={24} lg={24} xl={14}>
             <Rate
               style={{ fontSize: "0.93rem" }}
               allowHalf
@@ -54,10 +54,10 @@ export default function SoftSkills() {
         </Row>
 
         <Row>
-          <Col xs={10} sm={6} md={24} lg={24} xl={10}>
+          <Col xs={12} sm={12} md={24} lg={24} xl={10}>
             Communication
           </Col>
-          <Col xs={14} sm={18} md={24} lg={24} xl={14}>
+          <Col xs={12} sm={12} md={24} lg={24} xl={14}>
             <Rate
               style={{ fontSize: "0.93rem" }}
               allowHalf

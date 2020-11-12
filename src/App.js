@@ -3,7 +3,8 @@ import "./App.css";
 import Layout from "./components/Layout";
 import Experience from "./components/Experience";
 import PageNavigator from "./components/PageNavigator";
-import { Row, Col, Card, Affix } from "antd";
+import Footer from "./components/Footer";
+import { Row, Col, Card } from "antd";
 import "antd/dist/antd.css";
 
 const App = () => {
@@ -24,9 +25,9 @@ const App = () => {
           </Card>
         </Col>
         <Col xs={0} sm={0} md={2} lg={2} xl={2} style={{ paddingLeft: "10px" }}>
-          <Affix offsetTop={10}>
+          <div style={{ position: "fixed" }}>
             <PageNavigator />
-          </Affix>
+          </div>
         </Col>
       </Row>
 
@@ -42,6 +43,12 @@ const App = () => {
           >
             <Experience />
           </Card>
+        </Col>
+      </Row>
+
+      <Row>
+        <Col xs={24} sm={24} md={0} lg={0} xl={0}>
+          <Footer />
         </Col>
       </Row>
     </div>

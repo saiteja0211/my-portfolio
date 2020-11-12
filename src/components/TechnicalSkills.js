@@ -26,16 +26,17 @@ const otherUILibs = {
   "queue-anim": "https://www.npmjs.com/package/rc-queue-anim",
   Jest: "https://jestjs.io/",
 };
-const backend = ["Spring Boot", "Java", "SQL"];
+const backend = ["Spring Boot", "Java", "Hibernate", "SQL"];
 
 const platforms = [
   "Agile",
   "Jira",
   "Jenkins",
   "Bitbucket",
+  "Git",
   "OpenShift container",
   "SonarQube",
-  "Nexus IQ",
+  "Nexus",
   "ELK",
   "BMC Remedy",
 ];

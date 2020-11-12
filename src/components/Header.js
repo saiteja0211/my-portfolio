@@ -5,11 +5,9 @@ import {
   PhoneFilled,
   StarOutlined,
   EnvironmentFilled,
-  InstagramFilled,
-  FacebookFilled,
-  LinkedinFilled,
 } from "@ant-design/icons";
 import saitejaPic from "../img/saitejaPic.jpg";
+import SocialAccounts from "./SocialAccounts";
 
 export default function Header() {
   return (
@@ -102,49 +100,21 @@ export default function Header() {
               </div>
             </Col>
             <Col
-              xs={4}
-              sm={8}
+              xs={0}
+              sm={0}
               md={4}
               lg={4}
               xl={4}
               style={{ borderLeft: "1px solid" }}
             >
-              <div
-                style={{
+              <SocialAccounts
+                myStyle={{
                   paddingLeft: "10px",
                   display: "flex",
                   alignItems: "flex-start",
                   flexDirection: "column",
                 }}
-              >
-                <a
-                  href="https://www.linkedin.com/in/sai-teja-jonnadula-600629157/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <LinkedinFilled
-                    style={{ color: "#44bfff", fontSize: "22px" }}
-                  />
-                </a>
-                <a
-                  href="https://www.instagram.com/saiteja.me/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <InstagramFilled
-                    style={{ color: "#bc1a7a", fontSize: "22px" }}
-                  />
-                </a>
-                <a
-                  href="https://www.facebook.com/saitejajonnadula"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FacebookFilled
-                    style={{ color: "#566fa2", fontSize: "22px" }}
-                  />
-                </a>
-              </div>
+              />
             </Col>
           </Row>
         </Col>
