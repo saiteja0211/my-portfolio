@@ -4,7 +4,7 @@ import { Divider, Tag, Timeline, Row, Col } from "antd";
 const ProfessionalCarrier = () => {
   return (
     <>
-      <div className="padd-left" id="component-education">
+      <div className="padd-left" id="component-professional-carrier">
         <Row>
           <Col xs={23} sm={23} md={23} lg={23} xl={23}>
             <Divider orientation="left">Professional Carrier</Divider>
