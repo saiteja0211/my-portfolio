@@ -3,7 +3,7 @@ import Header from "./Header";
 import AboutMe from "./AboutMe";
 import SoftSkills from "./SoftSkills";
 import TechnicalSkills from "./TechnicalSkills";
-import ProfessionalCarrier from "./ProfessionalCarrier";
+import ProfessionalCareer from "./ProfessionalCareer";
 import Education from "./Education";
 import PersonalProjects from "./PersonalProjects";
 import SelfInterests from "./SelfInterests";
@@ -32,7 +32,7 @@ export default function Layout() {
           style={{ backgroundColor: "White", color: "black" }}
         >
           <AboutMe />
-          <ProfessionalCarrier />
+          <ProfessionalCareer />
           <Education />
           <TechnicalSkills />
         </Col>

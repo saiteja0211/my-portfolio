@@ -26,7 +26,7 @@ const otherUILibs = {
   "queue-anim": "https://www.npmjs.com/package/rc-queue-anim",
   Jest: "https://jestjs.io/",
 };
-const backend = ["Spring Boot", "Java", "Hibernate", "SQL"];
+const backend = ["Spring Boot", "Java", "Hibernate", "SQL", "Elastic search"];
 
 const platforms = [
   "Agile",
@@ -46,9 +46,9 @@ const otherTechs = [
   "Incident Management",
   "Problem Management",
   "Change Management",
-  "micro frontends",
-  "micro services",
-  "JWT",
+  "Micro frontends",
+  "Micro services",
+  "JWT authorization",
 ];
 export default function TechnicalSkills() {
   return (
