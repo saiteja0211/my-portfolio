@@ -1,19 +1,19 @@
 import React from "react";
 import { Divider, Tag, Timeline, Row, Col } from "antd";
 
-const ProfessionalCarrier = () => {
+const ProfessionalCareer = () => {
   return (
     <>
-      <div className="padd-left" id="component-professional-carrier">
+      <div className="padd-left" id="component-professional-career">
         <Row>
           <Col xs={23} sm={23} md={23} lg={23} xl={23}>
-            <Divider orientation="left">Professional Carrier</Divider>
+            <Divider orientation="left">Professional Career</Divider>
           </Col>
         </Row>
 
         <Timeline mode="left">
           <Timeline.Item color="green" style={{ color: "black" }}>
-            <Tag>2019 – till date</Tag>Tech Analyst | EASRE, DBS Pvt Ltd
+            <Tag>2019 – till date</Tag>Technology Analyst | EASRE, DBS Pvt Ltd
           </Timeline.Item>
 
           <Timeline.Item
@@ -27,4 +27,4 @@ const ProfessionalCarrier = () => {
     </>
   );
 };
-export default ProfessionalCarrier;
+export default ProfessionalCareer;

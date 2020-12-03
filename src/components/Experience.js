@@ -1,31 +1,39 @@
 import React from "react";
 import { Divider, Tag, Timeline } from "antd";
-import { ClockCircleOutlined } from "@ant-design/icons";
+import {
+  ClockCircleOutlined,
+  StarTwoTone,
+  RocketTwoTone,
+} from "@ant-design/icons";
 
 const projectdetails = [
   {
     id: "1",
-    dotColor: "red",
-    title: "SVGenie-ui, Raft-ui",
-    info: ["2020", "DBS"],
-    techs: ["react", "react-hooks", "redux", "react-table"],
+    dot: <ClockCircleOutlined className="normal-font-size" />,
+    title: "Service virtualization",
+    info: [
+      "2020",
+      "react",
+      "react-hooks",
+      "redux",
+      "react-table",
+      "micro-frontend",
+    ],
     description: (
       <div>
-        Service virtualization helps the user to mimic service oriented
-        architecture and allows user to create and consume HTTP/S and IBM MQ
-        virtual services by virtualizing request or response. User can create,
-        edit, test, clone, approve, download, delete & even schedule virtual
-        service(s). It is a hassle-free process for frontend developers without
-        any dependency on backend services.
+        Service virtualization mimics service oriented architecture and allows
+        to create and consume HTTP/S and IBM MQ virtual services by virtualizing
+        request or response. Ability to create, edit, test, clone, approve,
+        download, delete & even schedule virtual service(s).
       </div>
     ),
   },
   {
     id: "2",
-    dotColor: "red",
-    title: "Wreckoon-ui",
-    info: ["2020", "DBS"],
-    techs: [
+    dot: <StarTwoTone twoToneColor="#eb2f96" className="normal-font-size" />,
+    title: "Chaos Engineering",
+    info: [
+      "2020",
       "react",
       "redux",
       "redux-thunk",
@@ -33,94 +41,83 @@ const projectdetails = [
       "chaos engineering",
       "elastic search",
       "nivo visualization",
+      "micro-frontend",
     ],
     description: (
       <div>
-        Chaos engineering is a controlled approach to experiment & identify
+        Chaos engineering is controlled approach to experiment & identify
         vulnerabilities in production environment before they become outages.
-        Wreckoon can trigger 12 different types of attacks on targeted
-        application. User can customise, save & schedule attacks, check detailed
+        Ability to trigger different types of attacks on targeted application or
+        machine. Ability to customise, save & schedule attacks, check detailed
         attack report.
       </div>
     ),
   },
   {
     id: "3",
-    dotColor: "red",
-    title: "Sourcex-ui",
-    info: ["2020", "DBS"],
-    techs: ["react", "react-hooks", "react-context"],
+    dot: <StarTwoTone twoToneColor="#eb2f96" className="normal-font-size" />,
+    title: "Code sharing platform",
+    info: ["2020", "react", "react-hooks", "react-context", "micro-frontend"],
     description: (
       <div>
-        An internal code sharing platform for developers. Any user can create,
-        share, fork, clone, download, watch, like, comment repositories shared
-        on this platform. Users will be rewarded monthly based on likes,
-        comments, shares.
+        Code sharing platform for developers. Ability to create, share, fork,
+        clone, download, watch, like, comment repositories/snippets shared on
+        this platform.
       </div>
     ),
   },
   {
     id: "4",
-    dotColor: "red",
-    title: "Tasks-ui, Requests-ui",
-    info: ["2019", "DBS"],
-    techs: [
-      "react",
-      "request-workflow",
-      "bolt micro-frontends",
-      "admin-self access",
-    ],
+    dot: <StarTwoTone twoToneColor="#eb2f96" className="normal-font-size" />,
+    title: "Tasks & Requests",
+    info: ["2019", "react", "request-workflow", "micro-frontend"],
     description: (
       <div>
-        Task-ui and Request-ui involves in tracking & actioning access requests
-        made by users. User subitted requests send for approval in tasks-ui and
-        the primary/secondary approver can either approve or reject them. These
-        requests can be tracked and rendered conditionally based on user role in
-        requests-ui.
+        Involves in tracking & actioning access requests created by users.
+        Requests go through approval process and subjected to either approve or
+        reject. Ability to conditionally render based on roles.
       </div>
     ),
   },
   {
     id: "5",
-    dotColor: "red",
-    title: "Onboarding-service",
-    info: ["2019", "DBS"],
-    techs: [
+    dot: <StarTwoTone twoToneColor="#eb2f96" className="normal-font-size" />,
+    title: "Onboarding Service",
+    info: [
+      "2019",
       "spring boot",
       "java",
       "bitbucket-jenkins integration",
       "enhanchements",
+      "micro-service",
     ],
     description: (
       <div>
         Involves in automated onboarding of a application & provisioning
-        platforms(AWS, openshift, VPC, Mobile) and tools(Bitbucket, Jenkins,
-        Nexus, SonarQube). This service helps the user to onboard new
-        applications and selective provisioning of tools and paltforms.
+        platforms and dev-tools. Ability to onboard new applications and
+        selective provisioning of tools and paltforms.
       </div>
     ),
   },
   {
     id: "6",
-    dotColor: "red",
-    title: "Celerity-service",
-    info: ["2019", "DBS"],
-    techs: ["spring boot", "java", "jira integration"],
+    dot: <StarTwoTone twoToneColor="#eb2f96" className="normal-font-size" />,
+    title: "DataBase Service",
+    info: ["2019", "spring boot", "java", "jira integration", "micro-service"],
     description: (
       <div>
-        Celerity helps to create, mapp security groups to database tables and
-        which in turn mapped to users for access management. On submitting
-        celerity onboarding request a jira request is created and actioned. It
-        also allows to configuring security groups to tabels and users.
+        Ability to create, mapp security groups to database tables and which in
+        turn mapped to users for access management. Involves in auto jira
+        request creation. Ability to configuring security groups to tabels and
+        users.
       </div>
     ),
   },
   {
     id: "7",
-    dotColor: "red",
-    title: "Noncicd-entitlement-review-ui",
-    info: ["2019", "DBS"],
-    techs: ["react", "user access review", "bolt micro-frontends"],
+    dot: <StarTwoTone twoToneColor="#eb2f96" className="normal-font-size" />,
+    title: "Tool access review",
+    info: ["2019", "react", "user access review", "micro-frontend"],
     description: (
       <div>
         A bi-yearly review system triggered to application owners. It is onestop
@@ -131,24 +128,22 @@ const projectdetails = [
   },
   {
     id: "8",
-    dotColor: "blue",
-    title: "Reporting hub",
-    info: ["2018", "Infosys"],
-    techs: ["react", "javascript", "css", "html"],
+    dot: <RocketTwoTone className="normal-font-size" />,
+    title: "Report Generator, Procedure Store",
+    info: ["2018", "react", "javascript", "css", "html"],
     description: (
       <div>
-        A middleware credit report facilitator used by bankers. It’s acts as
-        buffer to upstream and downstream layers. Report view and download are
-        the only features available.
+        A middleware report generator. Ability to view and download report.
+        Procedure Store is a central hub all procedures and guidelines.
       </div>
     ),
   },
   {
     id: "9",
-    dotColor: "blue",
-    title: "Xtraction Tool",
-    info: ["2018", "Infosys"],
-    techs: [
+    dot: <RocketTwoTone className="normal-font-size" />,
+    title: "Xtraction",
+    info: [
+      "2018",
       "visualization",
       "incident problem change tracker",
       "custom alerts",
@@ -165,10 +160,10 @@ const projectdetails = [
   },
   {
     id: "10",
-    dotColor: "blue",
-    title: "WFI - Production Support",
-    info: ["2017", "Infosys"],
-    techs: [
+    dot: <RocketTwoTone className="normal-font-size" />,
+    title: "Production Application Support",
+    info: [
+      "2017",
       "incident management",
       "problem management",
       "change management",
@@ -195,7 +190,7 @@ export default function Experience() {
           {projectdetails.map((project) => {
             return (
               <Timeline.Item
-                dot={project.id === "1" ? <ClockCircleOutlined /> : ""}
+                dot={project.dot}
                 color={project.dotColor}
                 key={project.id}
               >
@@ -205,11 +200,6 @@ export default function Experience() {
                       <span className="project-title">{project.title} : </span>
                       {project.info.map((value) => {
                         return <Tag key={value}>{value}</Tag>;
-                      })}
-                    </div>
-                    <div>
-                      {project.techs.map((tech) => {
-                        return <Tag key={tech}>{tech}</Tag>;
                       })}
                     </div>
                   </div>

@@ -12,8 +12,8 @@ const PageNavigator = () => {
         </Timeline.Item>
 
         <Timeline.Item>
-          <a href="#component-professional-carrier" className="current">
-            Professional Carrier
+          <a href="#component-professional-career" className="current">
+            Professional career
           </a>
         </Timeline.Item>
 

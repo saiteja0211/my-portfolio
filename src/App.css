@@ -1,3 +1,7 @@
+.normal-font-size {
+  font-size: 20px;
+}
+
 .ant-tag {
   background-color: rgb(235, 235, 237) !important;
   color: black !important;

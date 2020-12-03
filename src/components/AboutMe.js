@@ -11,13 +11,11 @@ export default function AboutMe() {
           </Col>
         </Row>
         <div>
-          A cognitive software developer with 3.6+ years of experience in
-          developing frontend & site reliable applications and supporting
-          production applications. My work highly focuses on composition,
-          balance, contrast, performance, responsive & modularity. Expert in
-          working with web technologies and developed many independent web
-          applications. I am always adaptive, enthusiastic and passionate to
-          learn new technologies/things.
+          A cognitive software developer with 3.6+ years of expertise in
+          designing & developing reliable web applications. My work highly
+          focuses on composition, balance, contrast, performance, responsive &
+          modularity. Developed many independent web applications. Adaptive,
+          enthusiastic and passionate to learn new web technologies.
         </div>
       </div>
     </>
