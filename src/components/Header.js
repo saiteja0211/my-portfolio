@@ -64,10 +64,7 @@ export default function Header() {
                 <StarOutlined /> Full-Stack Web Developer
               </div>
               <div>
-                <StarOutlined /> Site Reliablity Engineer
-              </div>
-              <div>
-                <StarOutlined /> Production Support Engineer
+                <StarOutlined /> Certified System Architect
               </div>
             </Col>
             <Col
@@ -89,9 +86,6 @@ export default function Header() {
                 <div style={{ paddingLeft: "10px" }}>
                   <div>
                     <MailFilled /> saitejajonnadula@gmail.com
-                  </div>
-                  <div>
-                    <PhoneFilled /> +91 9948124459
                   </div>
                   <div>
                     <EnvironmentFilled /> Hyderabad, Telangana
