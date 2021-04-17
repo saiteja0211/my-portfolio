@@ -62,7 +62,7 @@ export default function PersonalProjects() {
           xl={23}
         >
           <a
-            href="http://gatsby-portfolio-ui.netlify.app/"
+            href="https://github.com/saiteja0211/"
             target="_blank"
             rel="noopener noreferrer"
             style={{ color: "white" }}
