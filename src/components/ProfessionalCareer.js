@@ -13,7 +13,11 @@ const ProfessionalCareer = () => {
 
         <Timeline mode="left">
           <Timeline.Item color="green" style={{ color: "black" }}>
-            <Tag>2019 – till date</Tag>Technology Analyst | EASRE, DBS Pvt Ltd
+            <Tag>2021 – till date</Tag>Software Engineer-UI, Pegasystems
+          </Timeline.Item>
+          
+          <Timeline.Item color="green" style={{ color: "black" }}>
+            <Tag>2019 – 2021</Tag>Technology Analyst | EASRE, DBS Pvt Ltd
           </Timeline.Item>
 
           <Timeline.Item
