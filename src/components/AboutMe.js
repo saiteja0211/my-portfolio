@@ -11,7 +11,7 @@ export default function AboutMe() {
           </Col>
         </Row>
         <div>
-          A cognitive software developer with 3.6+ years of expertise in
+          A cognitive software developer with 4.6+ years of expertise in
           designing & developing reliable web applications. My work highly
           focuses on composition, balance, contrast, performance, responsive &
           modularity. Developed many independent web applications. Adaptive,
