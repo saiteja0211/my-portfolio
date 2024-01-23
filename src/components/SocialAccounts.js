@@ -8,7 +8,7 @@ const SocialAccounts = (props) => {
   return (
     <div style={props.myStyle}>
       <a
-        href="https://www.linkedin.com/in/sai-teja-jonnadula-600629157/"
+        href="https://www.linkedin.com/in/saitejajonnadula"
         target="_blank"
         rel="noopener noreferrer"
         style={{ padding: props.myPadding }}
